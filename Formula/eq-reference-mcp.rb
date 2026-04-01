@@ -7,6 +7,9 @@ class EqReferenceMcp < Formula
   sha256 "7801139d770db355560be3a4525ed8d03ecd1f43829757e1f46fdfc081805f3b"
   license "MIT"
 
+  depends_on "cmake" => :build
+  depends_on "rust" => :build
+  depends_on "openssl@3"
   depends_on "python@3.13"
 
   resource "annotated-doc" do
